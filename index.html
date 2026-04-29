@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad Básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#contenido" class="skip-link">Saltar el contenido</a>
+    
+    <header role="banner">
+        <h1>Mi primera página accesible</h1>
+        <div class="controles">
+            <button id="btn-contraste" aria-pressed="false">Alto contraste</button>
+            <button id="btn-mas">A+</button>
+            <button id="btn-menos">A-</button>
+        </div>
+    </header>
+
+    <main id="contenido" role="main">
+        <p id="parrafo-ajustable">
+            La accesibilidad web es una práctica fundamental que permite que todas las personas, 
+            independientemente de sus capacidades o discapacidades, puedan acceder y utilizar los sitios web. 
+            Esto incluye a personas con discapacidades visuales, auditivas, motoras o cognitivas. 
+            Implementar características como alto contraste y ajuste de tamaño de fuente son pasos simples 
+            pero significativos para lograr una web más inclusiva y equitativa para todos los usuarios.
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2026 - Joel Portillo Fernández</p>
+    </footer>
+
+    <div id="avisos" aria-live="polite" class="sr-only"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
